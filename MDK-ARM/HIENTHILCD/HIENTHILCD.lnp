@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"hienthilcd\startup_stm32f103xb.o"
+"hienthilcd\stm32f1xx_hal_gpio_ex.o"
+"hienthilcd\stm32f1xx_hal.o"
+"hienthilcd\stm32f1xx_hal_flash_ex.o"
+"hienthilcd\stm32f1xx_hal_flash.o"
+"hienthilcd\stm32f1xx_hal_gpio.o"
+"hienthilcd\stm32f1xx_hal_pwr.o"
+"hienthilcd\stm32f1xx_hal_rcc.o"
+"hienthilcd\stm32f1xx_hal_cortex.o"
+"hienthilcd\stm32f1xx_hal_dma.o"
+"hienthilcd\stm32f1xx_hal_rcc_ex.o"
+"hienthilcd\stm32f1xx_hal_tim_ex.o"
+"hienthilcd\stm32f1xx_hal_tim.o"
+"hienthilcd\stm32f1xx_it.o"
+"hienthilcd\main.o"
+"hienthilcd\stm32f1xx_hal_msp.o"
+"hienthilcd\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "HIENTHILCD\HIENTHILCD.sct"
+
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "HIENTHILCD.map" -o HIENTHILCD\HIENTHILCD.axf

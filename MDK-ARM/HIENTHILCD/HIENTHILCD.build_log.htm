@@ -1,0 +1,108 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+E:\Hardware\HIENTHILCD\MDK-ARM\HIENTHILCD.uvprojx
+Project File Date:  03/22/2017
+
+<h2>Output:</h2>
+Build target 'HIENTHILCD'
+linking...
+Program Size: Code=3712 RO-data=284 RW-data=8 ZI-data=1024  
+FromELF: creating hex file...
+"HIENTHILCD\HIENTHILCD.axf" - 0 Error(s), 0 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.1.0.pack
+                ARM::CMSIS:CORE:3.30.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 3.30.0
+
+<h2>Collection of Component include folders:</h2>
+  E:\Hardware\HIENTHILCD\MDK-ARM\RTE
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.0\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:3.30.0
+      Source file:   CMSIS\UserCodeTemplates\ARM\ITM_Retarget.c
+Load "HIENTHILCD\\HIENTHILCD.axf" 
+Error: Flash Download failed  -  Target DLL has been cancelled
+Load "HIENTHILCD\\HIENTHILCD.axf" 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+</pre>
+</body>
+</html>
+  if(data&0x80) LCD_D7_SET;
+..\..\STM32F103-Tutorial\12.ADC_LCD_16x2\Src\lcd.c(67): error:  #20: identifier "GPIO_Pin_3" is undefined
+        else LCD_D7_CLEAR;
+..\..\STM32F103-Tutorial\12.ADC_LCD_16x2\Src\lcd.c(68): error:  #20: identifier "GPIO_Pin_2" is undefined
+        if(data&0x40) LCD_D6_SET;
+..\..\STM32F103-Tutorial\12.ADC_LCD_16x2\Src\lcd.c(69): error:  #20: identifier "GPIO_Pin_2" is undefined
+        else LCD_D6_CLEAR;      
+..\..\STM32F103-Tutorial\12.ADC_LCD_16x2\Src\lcd.c(72): error:  #20: identifier "GPIO_Pin_0" is undefined
+        if(data&0x10) LCD_D4_SET;
+..\..\STM32F103-Tutorial\12.ADC_LCD_16x2\Src\lcd.c(73): error:  #20: identifier "GPIO_Pin_0" is undefined
+        else LCD_D4_CLEAR;
+..\..\STM32F103-Tutorial\12.ADC_LCD_16x2\Src\lcd.c(84): error:  #20: identifier "GPIO_Pin_3" is undefined
+        if(data&0x08) LCD_D7_SET;
+..\..\STM32F103-Tutorial\12.ADC_LCD_16x2\Src\lcd.c(85): error:  #20: identifier "GPIO_Pin_3" is undefined
+        else LCD_D7_CLEAR;
+..\..\STM32F103-Tutorial\12.ADC_LCD_16x2\Src\lcd.c(86): error:  #20: identifier "GPIO_Pin_2" is undefined
+        if(data&0x04) LCD_D6_SET;
+..\..\STM32F103-Tutorial\12.ADC_LCD_16x2\Src\lcd.c(87): error:  #20: identifier "GPIO_Pin_2" is undefined
+        else LCD_D6_CLEAR;      
+..\..\STM32F103-Tutorial\12.ADC_LCD_16x2\Src\lcd.c(90): error:  #20: identifier "GPIO_Pin_0" is undefined
+        if(data&0x1) LCD_D4_SET;
+..\..\STM32F103-Tutorial\12.ADC_LCD_16x2\Src\lcd.c(91): error:  #20: identifier "GPIO_Pin_0" is undefined
+        else LCD_D4_CLEAR;
+..\..\STM32F103-Tutorial\12.ADC_LCD_16x2\Src\lcd.c(161): warning:  #223-D: function "RCC_AHB1PeriphClockCmd" declared implicitly
+        RCC_AHB1PeriphClockCmd(LCD_RS_GPIO_CLK | LCD_EN_GPIO_CLK|LCD_D4_GPIO_CLK|LCD_D5_GPIO_CLK|LCD_D6_GPIO_CLK|LCD_D7_GPIO_CLK, ENABLE);
+..\..\STM32F103-Tutorial\12.ADC_LCD_16x2\Src\lcd.c(161): error:  #20: identifier "RCC_AHB1Periph_GPIOB" is undefined
+        RCC_AHB1PeriphClockCmd(LCD_RS_GPIO_CLK | LCD_EN_GPIO_CLK|LCD_D4_GPIO_CLK|LCD_D5_GPIO_CLK|LCD_D6_GPIO_CLK|LCD_D7_GPIO_CLK, ENABLE);
+..\..\STM32F103-Tutorial\12.ADC_LCD_16x2\Src\lcd.c(161): error:  #20: identifier "RCC_AHB1Periph_GPIOC" is undefined
+        RCC_AHB1PeriphClockCmd(LCD_RS_GPIO_CLK | LCD_EN_GPIO_CLK|LCD_D4_GPIO_CLK|LCD_D5_GPIO_CLK|LCD_D6_GPIO_CLK|LCD_D7_GPIO_CLK, ENABLE);
+..\..\STM32F103-Tutorial\12.ADC_LCD_16x2\Src\lcd.c(166): error:  #136: struct "<unnamed>" has no field "GPIO_Pin"
+        GPIO_InitStructure.GPIO_Pin     = LCD_RS_GPIO_PIN;
+..\..\STM32F103-Tutorial\12.ADC_LCD_16x2\Src\lcd.c(166): error:  #20: identifier "GPIO_Pin_0" is undefined
+        GPIO_InitStructure.GPIO_Pin     = LCD_RS_GPIO_PIN;
+..\..\STM32F103-Tutorial\12.ADC_LCD_16x2\Src\lcd.c(167): error:  #136: struct "<unnamed>" has no field "GPIO_Mode"
+        GPIO_InitStructure.GPIO_Mode    = GPIO_Mode_OUT;
+..\..\STM32F103-Tutorial\12.ADC_LCD_16x2\Src\lcd.c(167): error:  #20: identifier "GPIO_Mode_OUT" is undefined
+        GPIO_InitStructure.GPIO_Mode    = GPIO_Mode_OUT;
+..\..\STM32F103-Tutorial\12.ADC_LCD_16x2\Src\lcd.c(168): error:  #136: struct "<unnamed>" has no field "GPIO_Speed"
+        GPIO_InitStructure.GPIO_Speed   = GPIO_Speed_50MHz;
+..\..\STM32F103-Tutorial\12.ADC_LCD_16x2\Src\lcd.c(168): error:  #20: identifier "GPIO_Speed_50MHz" is undefined
+        GPIO_InitStructure.GPIO_Speed   = GPIO_Speed_50MHz;
+..\..\STM32F103-Tutorial\12.ADC_LCD_16x2\Src\lcd.c(169): error:  #136: struct "<unnamed>" has no field "GPIO_PuPd"
+        GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL; 
+..\..\STM32F103-Tutorial\12.ADC_LCD_16x2\Src\lcd.c(169): error:  #20: identifier "GPIO_PuPd_NOPULL" is undefined
+        GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL; 
+..\..\STM32F103-Tutorial\12.ADC_LCD_16x2\Src\lcd.c: 1 warning, 30 errors
+"HIENTHILCD\HIENTHILCD.axf" - 30 Error(s), 1 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.1.0.pack
+                ARM::CMSIS:CORE:3.30.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 3.30.0
+
+<h2>Collection of Component include folders:</h2>
+  E:\Hardware\HIENTHILCD\MDK-ARM\RTE
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.0\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:3.30.0
+      Source file:   CMSIS\UserCodeTemplates\ARM\ITM_Retarget.c
+Target not created
